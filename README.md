@@ -21,7 +21,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Rood
 
   #### Je focus:
-  Responsive
+  Surface plane
  
 </details>
 
@@ -99,13 +99,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### pagina 1 - ADE programma: 
-  <img src="readme-images/breakdown-ade-program.png" width="600px" alt="breakdown van ADE programma pagina">
+  <img src="readme-images/breakdown-ade-program-v2.png" width="375px" alt="breakdown van ADE programma pagina">
 
   ### dynamisch deel (menu): 
-  <img src="readme-images/breakdown-ade-menu.png" width="600px" alt="breakdown van de hamburgermenu">
+  <img src="readme-images/breakdown-ade-menu.png" width="375px" alt="breakdown van de hamburgermenu">
 
-  ### pagina 2 - ADE homepagina): nog niet toegevoegd
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  ### pagina 2 - ADE homepagina):
+  <img src="readme-images/breakdown-ade-home.png" width="375px" alt="breakdown van de homepagina van ADE">
 
 </details>
 
