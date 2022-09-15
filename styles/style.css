@@ -1,6 +1,6 @@
-/**************/
-/* CSS REMEDY */
-/**************/
+/* Elaine Wilberforce, FED, bronnen en opmerkingen toegevoegd */
+
+/* css remedy */
 *, *::after, *::before {
   box-sizing:border-box;  
 }
@@ -10,30 +10,127 @@ button, summary {
 }
 
 
-
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
+/* custom properties */
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text-dark:#111;
+	--color-text-light:#ffffff;
+	--color-background:#d9d9d9;
+	--footer-color: #000;
+	--header-color: #ffffff;
 }
 
 
+/* styling */
 
-
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(/fonts/HelveticaNeue-01.ttf);
+}
 /* jouw code */
 
 body {
   color:var(--color-text);
   background-color:var(--color-background);
+  margin: 0;
+  font-family: HelveticaNeue;
 }
 
+/* header styling */
+header {
+	background-color: var(--header-color);
+}
+
+header a {
+	text-decoration: none;
+}
+
+header a img {
+	width:2.5em;
+}
+
+/* nav styling */
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5em;
+}
+nav img {
+	margin-left: 1em;
+}
+
+/* zoekbalk */
+input[type="text"] {
+	border: 0.1em solid black;
+	padding: inset 10em; /* zoekbalk groter maken*/
+}
+
+form button[type="submit"] {
+	border: 0.1em solid green;
+}
+
+video {
+	position: fixed;
+	object-fit: cover;
+	z-index: -1;
+	margin: 0;
+	top: 0;
+	left: 0;
+  	width: 100vw;
+  	height: 100vh;
+  	
+}
+
+h1 {
+	margin: 0;
+}
+
+/* selecteer de h1 van de 1e en 2e section */
+section h1:nth-child(2), section h1:nth-child(3) { 
+	position: fixed;
+	font-size: 2.5em;
+	z-index: -1;
+	margin-left: 0.5em;
+}
+/* selecteer de h1 van de tweede section, cascading */
+section h1:nth-child(3) {
+	margin-top: 1.2em;
+}
+
+ /* link van video header */
+ section a:nth-child(2n) {
+	position: fixed;
+	bottom: 30em;
+	z-index: -1;
+	margin-left: 1.5em;
+	text-decoration: none;
+	color: var(--color-text-light);
+	/* hoe voeg je een icon toe */
+ }
+ 
+
+
+/* selecteer de eerste section */
+section:nth-of-type(1) { 
+	display: flex;
+	flex-direction: column;
+	margin-top: 10em;
+	margin-bottom: 25em;
+	color: var(--color-text-light);
+}
+
+/* selecteer de tweede section */
+section:nth-of-type(2) {
+	background-color: var(--color-background);
+}
+
+/* selecteer de derde section */
+section:nth-of-type(3) {
+	background-color: var(--color-background);
+}
+
+footer {
+	background-color: var(--footer-color);
+	color: var(--color-text-light);
+}
