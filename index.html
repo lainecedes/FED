@@ -3,32 +3,37 @@
 	
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="author" content="Elaine Wilberforce">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<title>Amsterdam Dance Event</title>
 	
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	
 </head>
 
 <body>
 	
 	<header>
 		<nav>
-			<a href="#" aria-label="Amsterdam Dance Event Logo"> 
-				<img src="images/ade-logo.svg">
+			<a href="index.html" aria-label="Amsterdam Dance Event Logo">
+				<h1>Amsterdam Dance Event</h1> 
+				<img src="images/ade-logo.svg" alt="Logo image of ADE">
 			</a>
 			<form>
-				<input type="text" aria-placeholder="Search"> <!-- Zoekbalk -->
+				<input type="search" placeholder="Search..." aria-label="Search"> <!-- Zoekbalk -->
 				<button type="submit">Search</button> <!-- Zoekbalk button -->
 			</form>
 
 			<a href="#">Login</a>
-
+			
+			<button aria-label="Menu button" type="button">menu
+				<img src="/images/menu-bar.svg">
+			</button>
 			<ul>
-				<li></li>
-				<li></li>
+				<li><a href="#">Program</a></li>
+				<li><a href="#">ADE Pro Pass</a></li>
 			</ul>
 		</nav>
 
@@ -36,35 +41,61 @@
 	
 	<main>
 		<section>
+			<div>
+				<h2>19 --- 23/10 Electronic music gathers here</h1>
+				<a href="#">Get the ADE Pro Pass</a>
+			</div>
+
 			<video autoplay muted loop>
 				<source src="videos/ADE22_HOME_CAMPAIGN-1.mp4">
 			</video>
-			<h1>19 --- 23/10</h1>
-			<h1>Electronic music gathers here</h1>
-			<a href="#">Get the ADE Pro Pass</a>
 		</section>
 
 		<section>
-			<h1>Attend ADE 2022</h1>
-			<h2>ADE Pro Pass</h2>
+			<h2>Attend ADE 2022</h1>
+			<h3>ADE Pro Pass</h3>
+			<p>€600</p>
 			<p>Full access to all conference tracks, networking events & hubs, all Festival events and much more.</p>
-			<p>Rates go up September 8th!</p>
+			<p>Get the full ADE experience</p>
 			<a href="#">Get the ADE Pro Pass</a>
-			<button type="button">Skip</button>
 		</section>
 
 		<section>
+			<button type="button" aria-label="Skip content on page">Skip</button>
 			<a href="#"><!-- Heading and img als clickable link? --></a>
 		</section>
 
-		<section>
-			<!-- carrousel met headings en imgs als link -->
+		<section> <!-- simple carousel -->
+			<h2>News & updates</h2>
+			<h3>16/09</h3>
+			<ul>
+				<li>
+					<img src="/images/ade-carousel-1.png">
+					<p>Is your name for sale? Join the Merkplaats' workshop in trademark rights</p>
+				</li>
+				<li>
+					<img src="/images/ade-carousel-2.jpeg">
+					<p>ADE Lab: Pick the brains of Carl Cox, Oliver Heldens, Ellen Allen, and many more</p>
+				</li>
+				<li>
+					<img src="/images/ade-carousel-3.jpeg">
+					<p>Festival: Live Performances</p>
+				</li>
+				<li>
+					<img src="/images/ade-carousel-4.png">
+					<p>Joris Voorn and Johana Kroft bring an immersive experience to  Hotel De L'Europe</p>
+				</li>
+				<li>
+					<img src="/images/ade-carousel-5.jpeg">
+					<p>ADE Beats rolls out first selection of speakers</p>
+				</li>
+			</ul>
 		</section>
 
 	</main>
 
 	<footer>
-		<h1>Follow us</h1>
+		<h2>Follow us</h1>
 		<p>Subscribe to our newsletter and recieve the latest updates</p>
 		<a href="#">Subscribe now</a>
 		<nav>

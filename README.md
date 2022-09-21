@@ -11,7 +11,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Jij
 
-<details open>
+<details>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
@@ -29,7 +29,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Je website
 
-<details open>
+<details>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
@@ -39,10 +39,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Amsterdam Dance Event
+
   <img src="readme-images/ADEhome.png" width="375px" alt="Screenshot van ADE website op iPhone XR">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  ADE 2022 Program - ADE  
+  ADE 2022 Program - ADE 
+
   <img src="readme-images/ADEprogram.png" width="375px" alt="Screenshot van ADE programma op iPhone XR">
  
 </details>
@@ -51,7 +53,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Toegankelijkheidstest 1/2 (week 1)
 
-<details open>
+<details>
   <summary>uitwerken na test in 1e werkgroep</summary>
 
   ### Bevindingen
@@ -95,8 +97,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Breakdownschets (week 1)
 
-<details open>
-  <summary>uitwerken na afloop 2e werkgroep</summary>
+<details>
+  <summary>Mijn 3 breakdownschetsen van mijn website</summary>
 
   ### pagina 1 - ADE programma: 
   <img src="readme-images/breakdown-ade-program-v2.png" width="375px" alt="breakdown van ADE programma pagina">
@@ -115,30 +117,33 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 1 (week 2)
 
-<details>
-  <summary>uitwerken voor 1e voortgang</summary>
+<details open>
+  <summary>1e voortgangsgesprek</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  (neem ook screenshots op van delen van je website en code)
+
+  Met mijn code ging het goed, ik was best ver, alleen had ik wat problemen met de position:fixed op mijn kopjes bovenop de
+  video background en had ik wat foutjes met h1 en h2 kopjes
+
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Elaine            | Shelley            | Lisanne      | Karenza             |
+  | ---               | ---                | ---          | ---                 |
+  | position: fixed   | verplaatsen        | nog werken   | vragen weet ik ff   |
+  | hamburger menu    | container css      | aan html     | niet meer           |
+  | ...               | hamburger menu     | ...          | ...                 |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - h1 maar 1x gebruiken in je hele html + kopjes altijd eerst
+  - aria-labels
+  - hamburger menu handigheden
 
 </details>
 
@@ -148,21 +153,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 2 (week 3)
 
-<details>
-  <summary>uitwerken voor 2e voortgang</summary>
+<details open>
+  <summary>2e voortgangsgesprek</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  (neem ook screenshots op van delen van je website en code)
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Elaine            | Shelley              | Lisanne        | Karenza          |
+  | ---               | ---                  | ---            | ---              |
+  |button             | positie "child" in   | nog werken     | -                |
+  |verplaatsen in     | grid zonder dat hij  | aan html/css?  |                  |
+  |hamburgermenu open | uittrekt + css check | ...            | ...              |
 
 
   ### Verslag van meeting
@@ -174,9 +179,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 - ...
 
 </details>
-
-
-
 
 
 ## Toegankelijkheidstest 2/2 (week 4)
