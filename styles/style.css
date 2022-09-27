@@ -64,11 +64,17 @@ h1 {
 	margin: 0;
 }
 
-header a {
+header nav a:nth-of-type(2) {
+	/* login tekst */
+	position: relative;
 	text-decoration: none;
+	font-size: 0.9em;
+	left: 2.3em;
+
 }
 
 header a img {
+	/* logo img */
 	width:2.5em;
 }
 
@@ -80,34 +86,41 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	
 
 	min-height:5.5em;
 }
 
-nav img {
+nav a img {
+	/* logo */
 	margin-left: 1em;
 }
 
 header nav button:nth-last-child(2) {
-position: relative;
-z-index: 350;
-border: none;
-background: none;
-color: transparent;
+	/* menu button met icon */
+	position: relative;
+	z-index: 350;
+	border: none;
 
-margin: 0 1em 0 -4em;
-
+	background: none;
+	color: transparent;
+	width: 20%;
+	bottom: 0.4em;
+	left: 1em;
+	padding: 0;
 }
 
 header nav button:nth-last-child(2) img {
-	width: 2em;
+	/* icon svg */
+	width: 2.5em;
+	margin: 0 1.5em 0 0;
 }
 
 /***************/
 /* menu lijst */
 /***************/
 
-header nav ul {
+header nav ul:nth-of-type(2) {
 	position: fixed;
 
 	list-style:none;
@@ -124,7 +137,7 @@ header nav ul {
 }
 
 /* openen van hamburgermenu */
-nav.buttonOpen ul {
+nav.buttonOpen ul:nth-of-type(2) {
 	transform: translateX(0%);
 }
 
@@ -132,14 +145,67 @@ nav.buttonOpen ul {
 /* zoekbalk */
 /************/
 
-input[type="text"] {
-	border: 0.1em solid black;
-	padding: inset 10em; /* zoekbalk groter maken*/
+
+ul li form input {
+	position: fixed;
+	font: inherit;
+	z-index: 100;
+	padding: 1em;
+	border: none;
+	top: -1em;
+	left: -0.5em;
+	width: 8em;
 }
 
-form button[type="submit"] {
-	border: 0.1em solid green;
+
+header nav ul:nth-of-type(1) {
+	/* zoekbalk weg ---- NOG FIXEN */
+	display: block;
+	transform: translateX(-150%);
+	position: relative;
+	opacity: 0;
 }
+header nav button:nth-of-type(1){
+	/* zoekbalk button openklappen */
+	padding: 0;
+	z-index: 2;
+	border: none;
+	width: 10%;
+	appearance: none;
+	background: none;
+	color: transparent;
+}
+
+header nav button:nth-of-type(1) img {
+	/* zoekbalk icon */
+	width: 2em;
+	margin: 0 0 1em 0;
+}
+
+nav.searchOpen ul:nth-of-type(1) {
+	/* zoekbalk button laten zien */
+	transform: translateX(-60%);
+	opacity: 1;
+	transition: 0.5s;
+}
+
+header nav button:nth-of-type(2) {
+	/* favorieten knop */
+	position: relative;
+	appearance: none;
+	background: none;
+	color: transparent;
+	border: none;
+	padding: 0;
+	width: 7%;
+	margin: 0 0 0.9em 0;
+	left: 3em;
+}
+
+/* button: appearance: none, border: none, font: inherit */
+/* button:focus(-visible), outline:none */
+/* button:active, */
+/* ::before of ::after VOOR STYLING AAN LINKS!!!!!!! */
 
 /*****************/
 /* VIDEO SECTION */
@@ -213,33 +279,33 @@ section:nth-of-type(2) a {
 	border-radius: 2em;
 
 	padding: 1em;
-	width: 14em;
+	width: 14.5em;
 	margin: 2em 0 0 0;
 	text-align: center;
 }
 
 /* Prijs ADE Pro Pass met grid */
 section:nth-of-type(2) p:nth-of-type(1) {
-	border: 1px solid;
 	font-size: 1.7em;
 	text-align: end;
 }
 
 section:nth-of-type(2) p {
 	margin: 0;
+	font-size: 1.1em;
 }
 
 section:nth-of-type(2) p:nth-of-type(2) {
-	border: 1px solid;
 	grid-column-start: 1;
 	grid-column-end: 3;
+	margin: 0.5em 0 0 0;
 	
 }
 
 section:nth-of-type(2) p:nth-of-type(3) {
-	border: 1px solid;
 	grid-column-start: 1;
 	grid-column-end: 3;
+	margin: 0.5em 0 0 0;
 }
 
 /****************************/
@@ -281,7 +347,7 @@ section:nth-of-type(4) ul {
 
 /* Vanaf hier code van Sanne: https://codepen.io/shooft/pen/abmLRMg */
 	
-/* handmatig scrollen is mogelijk */
+	/* handmatig scrollen is mogelijk */
 	overflow-x: scroll;
 	overflow-y: hidden;
 	
@@ -289,7 +355,7 @@ section:nth-of-type(4) ul {
   	scroll-snap-type: inline mandatory;
 	/* smooth als met js gescrolled wordt */
 	scroll-behavior: smooth;
-  /* scrollbar zoveel mogelijk verbergen */
+  	/* scrollbar zoveel mogelijk verbergen */
   	-webkit-overflow-scrolling: touch; /* voor iOS*/
  	-ms-overflow-style: none; /* voor IE */
 	scrollbar-width: none; /* voor firefox */
@@ -305,6 +371,11 @@ section:nth-of-type(4) ul li {
   /* snappen als er gescrolled wordt - andere helft bij ul */
 	scroll-snap-align:center;
 }
+
+.show {
+	color: var(--link-button-color);
+}
+
 
 
 /******************/

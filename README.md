@@ -283,8 +283,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Intersection Observer - https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+  2. Carousel van Sanne - https://codepen.io/shooft/pen/abmLRMg
+  3. Learn Intersection Observer in 15 minutes - https://www.youtube.com/watch?v=2IbRtjez6ag
+  4. The Noun Project - Icons - https://thenounproject.com/
+  5. Media van ADE - https://www.amsterdam-dance-event.nl/en/
 
 </details>
