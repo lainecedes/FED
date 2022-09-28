@@ -22,6 +22,7 @@ button, summary {
 	--footer-color: #1c1c1c;
 	--header-color: #ffffff;
 	--link-button-color: #ffff07;
+	--footer-text-color: #808080;
 }
 
 
@@ -69,7 +70,7 @@ header nav a:nth-of-type(2) {
 	position: relative;
 	text-decoration: none;
 	font-size: 0.9em;
-	left: 2.3em;
+	left: 2em;
 
 }
 
@@ -78,11 +79,14 @@ header a img {
 	width:2.5em;
 }
 
+
+
+
 /***************/
 /* nav styling */
 /***************/
 
-nav {
+nav:nth-of-type(1) {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -91,12 +95,12 @@ nav {
 	min-height:5.5em;
 }
 
-nav a img {
+nav:nth-of-type(1) a img {
 	/* logo */
 	margin-left: 1em;
 }
 
-header nav button:nth-last-child(2) {
+header nav:nth-of-type(1) button:nth-last-child(2) {
 	/* menu button met icon */
 	position: relative;
 	z-index: 350;
@@ -104,27 +108,30 @@ header nav button:nth-last-child(2) {
 
 	background: none;
 	color: transparent;
-	width: 20%;
+	width: 5em;
 	bottom: 0.4em;
-	left: 1em;
 	padding: 0;
 }
 
-header nav button:nth-last-child(2) img {
+header nav:nth-of-type(1) button:nth-last-child(2) img {
 	/* icon svg */
 	width: 2.5em;
-	margin: 0 1.5em 0 0;
+	margin: 0 0 0 0;
 }
+
+
+
 
 /***************/
 /* menu lijst */
 /***************/
 
-header nav ul:nth-of-type(2) {
+header nav:nth-of-type(1) ul:nth-of-type(2) {
 	position: fixed;
 
 	list-style:none;
 	background-color: var(--link-button-color);
+	background-size: cover;
 
 	top: 0;
   	bottom: 0;
@@ -132,14 +139,23 @@ header nav ul:nth-of-type(2) {
   	right: 0;
 
 	margin: 0;
+	z-index: 100;
 
 	transform: translateX(100%);
 }
 
+header nav:nth-of-type(1) ul:nth-of-type(2) a {
+	font-size: 2em;
+}
+
+
 /* openen van hamburgermenu */
-nav.buttonOpen ul:nth-of-type(2) {
+nav:nth-of-type(1).buttonOpen ul:nth-of-type(2) {
 	transform: translateX(0%);
 }
+
+
+
 
 /************/
 /* zoekbalk */
@@ -158,17 +174,17 @@ ul li form input {
 }
 
 
-header nav ul:nth-of-type(1) {
+header nav:nth-of-type(1) ul:nth-of-type(1) {
 	/* zoekbalk weg ---- NOG FIXEN */
 	display: block;
 	transform: translateX(-150%);
 	position: relative;
 	opacity: 0;
 }
-header nav button:nth-of-type(1){
+header nav:nth-of-type(1) button:nth-of-type(1){
 	/* zoekbalk button openklappen */
 	padding: 0;
-	z-index: 2;
+	z-index: 1;
 	border: none;
 	width: 10%;
 	appearance: none;
@@ -176,13 +192,13 @@ header nav button:nth-of-type(1){
 	color: transparent;
 }
 
-header nav button:nth-of-type(1) img {
+header nav:nth-of-type(1) button:nth-of-type(1) img {
 	/* zoekbalk icon */
 	width: 2em;
 	margin: 0 0 1em 0;
 }
 
-nav.searchOpen ul:nth-of-type(1) {
+nav:nth-of-type(1).searchOpen ul:nth-of-type(1) {
 	/* zoekbalk button laten zien */
 	transform: translateX(-60%);
 	opacity: 1;
@@ -207,18 +223,21 @@ header nav button:nth-of-type(2) {
 /* button:active, */
 /* ::before of ::after VOOR STYLING AAN LINKS!!!!!!! */
 
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
 /*****************/
 /* VIDEO SECTION */
 /*****************/
 
-main section:nth-of-type(1) {
+#page1 main section:nth-of-type(1) {
 	position: relative;
 	width:100vw;
 	height:100vh;
 }
 
 /* selecteer de eerste section */
-div { 
+#page1 div { 
 	position: absolute;
 	inset:0;
 
@@ -226,38 +245,62 @@ div {
 	flex-direction: column;
 	justify-content:center;
 
-	padding: 1em 1em 10em 1em;
+	padding: 1em 1em 10em 1.5em;
 
 	/* background-color: #f008; */
 }
 
+#page1 div a {
+	/* icon pijltje positioneren */
+	position: relative;
+	left: 1em;
+	cursor: pointer;
+}
+
+#page1 div a::before {
+	/* icon pijltje */
+	content: url(/images/a-before.svg);
+	position: relative;
+	right: 1em;
+	transition: 0.5s;
+}
+#page1 div a:focus::before {
+	position: relative;
+	top: -0.5em;
+}
+
 /* selecteer de h1 van de 1e en 2e section */
-main section:nth-of-type(1) div h2 { 
+#page1 main section:nth-of-type(1) div h2 { 
 	font-size: 2.5em;
 	color: var(--color-text-light);
 	font-weight: 100;
 }
 
  /* link van video header */
- main section:nth-of-type(1) div a {
+ #page1 main section:nth-of-type(1) div a {
 	text-decoration: none;
 	color: var(--color-text-light);
  }
  
- main section:nth-of-type(1) video {
+ #page1 main section:nth-of-type(1) video {
 	object-fit: cover;
   	width: 100%;
   	height: 100%; 
 }
 
+
+
+
 /*****************************/
 /********* section 2 *********/
 /*****************************/
 
+/* Section 2 zelfde in beide pagina's */
+
 section:nth-of-type(2) {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	padding: 1em 1em 5em 1em;
+	padding: 1em 1em 4em 1.5em;
 }
 
 /* Positioneer h2 in 1 kolom */
@@ -285,6 +328,7 @@ section:nth-of-type(2) a {
 }
 
 /* Prijs ADE Pro Pass met grid */
+
 section:nth-of-type(2) p:nth-of-type(1) {
 	font-size: 1.7em;
 	text-align: end;
@@ -308,27 +352,67 @@ section:nth-of-type(2) p:nth-of-type(3) {
 	margin: 0.5em 0 0 0;
 }
 
+
+
+
 /****************************/
 /******** section 3 *********/
 /****************************/
 
-section:nth-of-type(3) {
+#page1 section:nth-of-type(3) {
+	/* mysterieuze margin right */
+	display: flex;
+	flex-direction: column;
 	background-color: var(--color-background);
+	width: 100%;
 }
+
+#page1 iframe {
+	position: relative;
+	left: 1.5em;
+	width: 23em; /* dit om de extra random margin weg te halen */
+	height: 18em;
+	border-radius: 1em;
+}
+
+#page1 section:nth-of-type(3) h2 {
+	position: relative;
+	width: 75%;
+	left: 1em;
+	margin: 1em 0 1.5em 0.2em;
+	font-size: 1.4em;
+}
+#page1 section:nth-of-type(3) > button {
+	position: relative;
+	left: 25em;
+	width: 10%;
+	appearance: none;
+	border: none;
+	background: none;
+	color: transparent;
+	order: -1;
+}
+
 
 /****************************/
 /********* carousel *********/
+/********* section 4 ********/
 /****************************/
 
-section:nth-of-type(4) h2 {
-	padding: 1em 1em 5em 1em;
+#page1 section:nth-of-type(4) {
+	margin: 0 0 3em 0;
+}
+
+#page1 section:nth-of-type(4) h2 {
+	padding: 0 0 5em 0;
+	margin: 2.5em 1em 0em 1.5em;
 	font-weight: 100;
 	/* news & updates */
 }
 
-section:nth-of-type(4) h3 {
+#page1 section:nth-of-type(4) h3 {
 	position: absolute;
-	margin: -0.75em 0 0 0;
+	margin: -0.75em 0 0 0.1em;
 
 	color: var(--color-text-light);
 	font-size: 9em;
@@ -336,14 +420,15 @@ section:nth-of-type(4) h3 {
 	/* achter de carousel, met JS? */
 }
 
-section:nth-of-type(4) img {
+#page1 section:nth-of-type(4) img {
 	display: block;
 	width: 21em;
 }
 
-section:nth-of-type(4) ul {
+#page1 section:nth-of-type(4) ul {
 	display: flex;
   	list-style: none;
+	margin: 0 0 0 1em;
 
 /* Vanaf hier code van Sanne: https://codepen.io/shooft/pen/abmLRMg */
 	
@@ -365,16 +450,18 @@ section:nth-of-type(4) ul {
 	overscroll-behavior: contain auto;
 }
 
-section:nth-of-type(4) ul li {
+#page1 section:nth-of-type(4) ul li {
 	flex-basis: 100%;
   	flex-shrink: 0;
   /* snappen als er gescrolled wordt - andere helft bij ul */
 	scroll-snap-align:center;
 }
 
-.show {
+#page1 .show { /* class in JS */
 	color: var(--link-button-color);
 }
+
+
 
 
 
@@ -386,22 +473,320 @@ footer {
 	display: flex;
 	flex-direction: column;
 
-	padding: 1em 1em 0em 1em;
+	padding: 1em 1em 0em 1.5em;
 
 	background-color: var(--footer-color);
 	color: var(--color-text-light);
+	font-weight: 100;
 }
 
 footer h2 {
+	/* h2 */
 	font-size: 2.5em;
 	font-weight: 100;
 	margin: .5em 0 0 0;
 }
 
-footer p {
+footer > p:nth-of-type(1) {
+	/* eerste p */
 	font-size: 1.4em;
 	font-weight: 100;
 }
 
+footer > p:nth-of-type(2) {
+	/* tweede p */
+	font-size: 0.8em;
+	color: var(--footer-text-color);
+}
+
+footer > a:nth-of-type(1) { 
+	/* eerste a linkje subscribe now */
+	text-decoration: none;
+	color: var(--color-text-light);
+	font-size: 1.4em;
+	position: relative;
+	left: 1em;
+	width: 50%;
+}
+
+footer > a:nth-of-type(1)::before {
+	/* eerste a linkje icon */
+	content: url(/images/a-before.svg);
+	position: relative;
+	right: 1em;
+}
+
+footer nav:nth-of-type(1) ul {
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	justify-content: flex;
+
+	width: 50%;
+	gap: 1.5em;
+	right: 2.5em;
+}
+
+footer nav:nth-of-type(1) ul li {
+	list-style-type: none;
+}
+
+footer nav:nth-of-type(1) ul li a {
+	color: var(--footer-text-color);
+	text-decoration: none;
+	font-size: 1.05em;
+	border: 0.1em solid;
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+	
+	padding: 0.6em;
+}
+
+footer nav:nth-of-type(2) ul {
+	position: relative;
+	right: 2.5em;
+
+}
+
+footer nav:nth-of-type(2) ul li {
+	list-style-type: none;
+}
+
+footer nav:nth-of-type(2) ul li a {
+	color: var(--footer-text-color);
+	text-decoration: none;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/******************/
+/***** Page 2 *****/
+/******************/
 
 
+
+
+
+
+
+/****************************/
+/******** section 1 *********/
+/****************************/
+
+
+
+
+
+
+
+
+/****************************/
+/******** section 3 *********/
+/****************************/
+
+#page2 section:nth-of-type(3) {
+	margin: 0 0 3em 0;
+}
+
+#page2 section:nth-of-type(3) h2 {
+	padding: 0 0 5em 0;
+	margin: 2.5em 1em 0em 1.5em;
+	font-weight: 100;
+	/* news & updates */
+}
+
+#page2 section:nth-of-type(3) h3 {
+	position: absolute;
+	margin: -0.75em 0 0 0.1em;
+
+	color: var(--color-text-light);
+	font-size: 9em;
+	font-weight: 100;
+	/* achter de carousel, met JS? */
+}
+
+#page2 section:nth-of-type(3) img {
+	display: block;
+	width: 21em;
+}
+
+#page2 section:nth-of-type(3) ul {
+	display: flex;
+  	list-style: none;
+	margin: 0 0 0 1em;
+
+/* Vanaf hier code van Sanne: https://codepen.io/shooft/pen/abmLRMg */
+	
+	/* handmatig scrollen is mogelijk */
+	overflow-x: scroll;
+	overflow-y: hidden;
+	
+	/* snappen als er gescrolled wordt - andere helft bij li */
+  	scroll-snap-type: inline mandatory;
+	/* smooth als met js gescrolled wordt */
+	scroll-behavior: smooth;
+  	/* scrollbar zoveel mogelijk verbergen */
+  	-webkit-overflow-scrolling: touch; /* voor iOS*/
+ 	-ms-overflow-style: none; /* voor IE */
+	scrollbar-width: none; /* voor firefox */
+	
+	/* indien het einde of het begin van de pagina bereikt is met scrollen */
+	/* voorkomen dat de pagina gaat scrollen */
+	overscroll-behavior: contain auto;
+}
+
+
+/****************************/
+/******** section 4 *********/
+/****************************/
+
+#page2 section:nth-of-type(4) {
+	/* mysterieuze margin right */
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color-background);
+	width: 100%;
+}
+
+#page2 iframe {
+	position: relative;
+	left: 1.5em;
+	width: 23em; /* dit om de extra random margin weg te halen */
+	height: 18em;
+	border-radius: 1em;
+}
+
+#page2 section:nth-of-type(4) h2 {
+	position: relative;
+	width: 75%;
+	left: 1em;
+	margin: 1em 0 1.5em 0.2em;
+	font-size: 1.4em;
+}
+#page2 section:nth-of-type(4) > button {
+	position: relative;
+	left: 25em;
+	width: 10%;
+	appearance: none;
+	border: none;
+	background: none;
+	color: transparent;
+	order: -1;
+}
+
+/****************************/
+/******** section 5 *********/
+/****************************/
+
+
+
+/****************************/
+/******** section 6 *********/
+/****************************/
+
+#page2 section:nth-of-type(6) {
+	margin: 0 0 3em 0;
+}
+
+#page2 section:nth-of-type(6) h2 {
+	padding: 0 0 5em 0;
+	margin: 2.5em 1em 0em 1.5em;
+	font-weight: 100;
+	/* news & updates */
+}
+
+#page2 section:nth-of-type(6) h3 {
+	position: absolute;
+	margin: -0.75em 0 0 0.1em;
+
+	color: var(--color-text-light);
+	font-size: 9em;
+	font-weight: 100;
+	/* achter de carousel, met JS? */
+}
+
+#page2 section:nth-of-type(6) img {
+	display: block;
+	width: 21em;
+}
+
+#page2 section:nth-of-type(6) ul {
+	display: flex;
+  	list-style: none;
+	margin: 0 0 0 1em;
+
+/* Vanaf hier code van Sanne: https://codepen.io/shooft/pen/abmLRMg */
+	
+	/* handmatig scrollen is mogelijk */
+	overflow-x: scroll;
+	overflow-y: hidden;
+	
+	/* snappen als er gescrolled wordt - andere helft bij li */
+  	scroll-snap-type: inline mandatory;
+	/* smooth als met js gescrolled wordt */
+	scroll-behavior: smooth;
+  	/* scrollbar zoveel mogelijk verbergen */
+  	-webkit-overflow-scrolling: touch; /* voor iOS*/
+ 	-ms-overflow-style: none; /* voor IE */
+	scrollbar-width: none; /* voor firefox */
+	
+	/* indien het einde of het begin van de pagina bereikt is met scrollen */
+	/* voorkomen dat de pagina gaat scrollen */
+	overscroll-behavior: contain auto;
+}
+
+/****************************/
+/******** section 7 *********/
+/****************************/
+
+#page2 section:nth-of-type(7) {
+	margin: 0 0 3em 0;
+}
+
+#page2 section:nth-of-type(7) h2 {
+	padding: 0 0 5em 0;
+	margin: 2.5em 1em 0em 1.5em;
+	font-weight: 100;
+	/* news & updates */
+}
+
+#page2 section:nth-of-type(7) h3 {
+	position: absolute;
+	margin: -0.75em 0 0 0.1em;
+
+	color: var(--color-text-light);
+	font-size: 9em;
+	font-weight: 100;
+	/* achter de carousel, met JS? */
+}
+
+#page2 section:nth-of-type(7) img {
+	display: block;
+	width: 21em;
+}
+
+#page2 section:nth-of-type(7) ul {
+	display: flex;
+  	list-style: none;
+	margin: 0 0 0 1em;
+
+/* Vanaf hier code van Sanne: https://codepen.io/shooft/pen/abmLRMg */
+	
+	/* handmatig scrollen is mogelijk */
+	overflow-x: scroll;
+	overflow-y: hidden;
+	
+	/* snappen als er gescrolled wordt - andere helft bij li */
+  	scroll-snap-type: inline mandatory;
+	/* smooth als met js gescrolled wordt */
+	scroll-behavior: smooth;
+  	/* scrollbar zoveel mogelijk verbergen */
+  	-webkit-overflow-scrolling: touch; /* voor iOS*/
+ 	-ms-overflow-style: none; /* voor IE */
+	scrollbar-width: none; /* voor firefox */
+	
+	/* indien het einde of het begin van de pagina bereikt is met scrollen */
+	/* voorkomen dat de pagina gaat scrollen */
+	overscroll-behavior: contain auto;
+}

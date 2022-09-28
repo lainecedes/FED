@@ -288,5 +288,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   3. Learn Intersection Observer in 15 minutes - https://www.youtube.com/watch?v=2IbRtjez6ag
   4. The Noun Project - Icons - https://thenounproject.com/
   5. Media van ADE - https://www.amsterdam-dance-event.nl/en/
+  6. Base64 Decoder (voor a::before icon converteren naar SVG) - https://base64.guru/converter/decode/file
+  7. Scroll to top button - https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+  8. Embedded Spotify link - https://open.spotify.com/playlist/2tYOFz9ouZnhV833UixJI8?go=1&utm_source=embed_player_m&utm_medium=desktop&nd=1 
 
 </details>
