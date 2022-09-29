@@ -153,7 +153,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 2 (week 3)
 
-<details open>
+<details>
   <summary>2e voortgangsgesprek</summary>
 
   ### Stand van zaken
@@ -183,23 +183,30 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Toegankelijkheidstest 2/2 (week 4)
 
-<details>
+<details open>
   <summary>uitwerken na test in 8e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is): nog uitwerken + foto's toevoegen
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Screenreader:
+  - Issues met skip button spotify
+  - Carousel leest ie niet als link
+  - Afbeeldingen alt niet toegevoegd, leest als file
+  - Heading laatste carousel (niet opnieuw lezen?)
+
+
+  - Headings leest ie wel
+  - P's leest ie wel
+  - Navigatie gaat goed
+  - A's gaat goed
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Focus en hover state nog niet gedaan
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
@@ -208,7 +215,53 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  
+  Kleurenblindheid
+  Normaal
+
+  Blue cone
+  Problemen met tekst in carousel gele tekst (laatste section)
+
+  Monochrome 
+  Problemen met tekst in carousel gele tekst (laatste section) 
+  Pijltjes zwart, misschien border eromheen
+
+  Green-weak
+  Oke
+
+  Green-blind
+  Oke
+
+  Red-weak
+  Oke
+
+  Red-blind
+  Oke
+
+  Blue weak
+  Problemen met tekst in carousel gele tekst (laatste section)
+
+  Blue-blind
+  Problemen met tekst in carousel gele tekst (laatste section)
+
+  Brillen
+
+  Low contrast
+  Tekst carousel geel niet duidelijk
+  Footer tekst wat helderder
+
+  Color
+  Alles gaat goed
+
+  Hemifield loss
+  Oke
+
+  Central field loss
+  Wazig zien, misschien meer contrast
+
+  Diabetic eye disease 
+
+
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
@@ -220,7 +273,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 3 (week 4)
 
-<details>
+<details open>
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
@@ -230,11 +283,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Elaine           | Shelley            | Lisanne      | Karenza          |
+  | hoe linken       | ---                | ---          | ---              |
+  | naar section     | Geen vragen        | -            | -                |
+  | zonder id/class  | ...                | ...          | ...              |
 
 
   ### Verslag van meeting

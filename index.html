@@ -13,7 +13,7 @@
 		
 	</head>
 
-	 <body id="page1"> <!-- CSS VOOR 1e PAGINA -->
+	 <body class="page1"> <!-- CSS VOOR 1e PAGINA -->
 		
 		<header>
 			<nav>
@@ -35,13 +35,13 @@
 				</ul>
 
 				<button aria-label="favorites" type="button">favorites
-					<img src="/images/ade-heart-favorite.svg">
+					<img src="/images/ade-heart-favorite.svg" alt="Favorites icon">
 				</button>
 
 				<a href="#">Login</a>
 				
 				<button aria-label="Menu button" type="button">menu
-					<img src="/images/menu-bar.svg">
+					<img src="/images/menu-bar.svg" alt="Menu icon">
 				</button>
 				<ul>
 					<li><a href="#">Program</a></li>
@@ -61,7 +61,7 @@
 				</div>
 
 				<video autoplay muted loop>
-					<source src="videos/ADE22_HOME_CAMPAIGN-1.mp4">
+					<source src="videos/ADE22_HOME_CAMPAIGN-1.mp4" alt="ADE campaign video">
 				</video>
 
 			</section>
@@ -78,14 +78,16 @@
 			<section>
 				<h2>Listen to the sound of ADE'22</h2>
 
+				<a href="section:nth-of-type(4)" aria-label="Skip content on page">Skip <!-- hoe skippen naar section 4 zonder class/id-->
+					<img src="/images/a-before.svg" alt="Skip to top icon">
+				</a>
+
 				<iframe src="https://open.spotify.com/embed/playlist/2tYOFz9ouZnhV833UixJI8?utm_source=generator" 
 				frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; 
 				picture-in-picture" loading="lazy">
 				</iframe>
 
-				<button type="button" aria-label="Skip content on page">Skip
-					<img src="/images/a-before.svg" alt="Skip to top icon">
-				</button>
+				
 				<!-- Spotify embedded link https://open.spotify.com/playlist/2tYOFz9ouZnhV833UixJI8?go=1&utm_source=embed_player_m&utm_medium=desktop&nd=1-->
 
 			</section>
@@ -94,25 +96,35 @@
 				<h2>News & updates</h2>
 				<h3>22/09</h3>
 				<ul>
-					<li>
-						<img src="/images/ade-carousel-1.png">
+					<li data-date="22/09">
+						<a href="#">
+						<img src="/images/ade-carousel-1.png" alt="G-Star RAW & ADE Collaberation">
 						<p>G-Star RAW joins forces with ADE for new backpack, pop-up record shop, events, and competition</p>
+						</a>
 					</li>
-					<li>
-						<img src="/images/ade-carousel-2.jpeg">
+					<li data-date="15/09">
+						<a href="#">
+						<img src="/images/ade-carousel-2.jpeg" alt="Picture of ADE Lab">
 						<p>ADE Lab: Pick the brains of Carl Cox, Oliver Heldens, Ellen Allen, and many more</p>
+						</a>
 					</li>
-					<li>
-						<img src="/images/ade-carousel-3.png">
+					<li data-date="14/09">
+						<a href="#">
+						<img src="/images/ade-carousel-3.png" alt="Picture of Merkplaats">
 						<p>Is your name for sale? Join the Merkplaats' workshop in trademark rights</p>
+						<a>
 					</li>
-					<li>
-						<img src="/images/ade-carousel-4.png">
+					<li data-date="14/09">
+						<a href="#">
+						<img src="/images/ade-carousel-4.png" alt="Picture of a festival">
 						<p>Festival: Live Performances</p>
+						</a>
 					</li>
-					<li>
-						<img src="/images/ade-carousel-5.jpeg">
+					<li data-date="13/09">
+						<a href="#">
+						<img src="/images/ade-carousel-5.jpeg" alt="Joris Voorn & Johana Kroft at Hotel De L'Europe">
 						<p>Joris Voorn and Johana Kroft bring an immersive experience to Hotel De L'Europe</p>
+						</a>
 					</li>
 				</ul>
 			</section>
@@ -125,10 +137,10 @@
 			<a href="#">Subscribe now</a>
 			<nav>
 				<ul>
-					<li><a href="#">Fb</a></li>
-					<li><a href="#">Tw</a></li>
-					<li><a href="#">Ig</a></li>
-					<li><a href="#">Li</a></li>
+					<li><a aria-label="Facebook" href="#">Fb</a></li>
+					<li><a aria-label="Twitter"href="#">Tw</a></li>
+					<li><a aria-label="Instagram"href="#">Ig</a></li>
+					<li><a aria-label="LinkedIn"href="#">Li</a></li>
 				</ul>
 			</nav>
 
