@@ -1,5 +1,6 @@
 // JavaScript Document
 
+// hamburgermenu voor header nav
 var menuButton = document.querySelector("header nav button:nth-last-child(2)");
 menuButton.addEventListener("click", openMenu);
 
@@ -8,7 +9,7 @@ function openMenu() {
     headerNav.classList.toggle("buttonOpen");
 }
 
-// search bar
+// search bar openklappen
 var searchButton = document.querySelector("header nav button:nth-of-type(1)");
 searchButton.addEventListener("click", openSearch);
 
@@ -16,6 +17,11 @@ function openSearch() {
     var searchNav = document.querySelector("header nav");
     searchNav.classList.toggle("searchOpen");
 }
+
+
+
+
+
 
 ////////////////////////////////////////////////////////////////////
 function kijkCarousel () {
@@ -87,7 +93,6 @@ function kijkCarousel () {
     // observer.observe(slides[0]);
 
 }
-
 
 kijkCarousel();
 
