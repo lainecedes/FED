@@ -116,7 +116,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 1 (week 2)
 
-<details open>
+<details>
   <summary>1e Voortgangsgesprek</summary>
 
   ### Stand van zaken
@@ -183,7 +183,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Toegankelijkheidstest 2/2 (week 4)
 
-<details open>
+<details>
   <summary>Toegankelijkheidstest</summary>
 
   ### Bevindingen
@@ -221,7 +221,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/bril-testen.jpg" width="375px" alt="bril zien">
   Dit zijn de resultaten:
 
-  - Kleurenblindheid - 
+  Kleurenblindheid - 
   Normaal - oke, tekst in carousel is nog meh
 
   Blue cone
@@ -249,7 +249,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blue-blind
   Problemen met tekst in carousel gele tekst (laatste section)
 
-  - Brillen - 
+  Brillen - 
 
   Low contrast
   Tekst carousel geel niet duidelijk
@@ -265,9 +265,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Wazig zien, misschien meer contrast
 
   Diabetic eye disease
-  - 
+  geen resultaat
 
-Wat er vooral uitkwam is dat de contrast in het algemeen goed te zien is voor alle kleurenblinden, maar er hier en daar nog wat tekst is (zoals de p in mijn carousel op 1e pagina), waar het echt slecht te zien is. Ik kan dit fixen door dit in een hover te veranderen en een zwarte achtergrind toe te voegen voor betere kleur en leesbaarheid
+  Wat er vooral uitkwam is dat de contrast in het algemeen goed te zien is voor alle kleurenblinden, maar er hier en daar nog wat tekst is (zoals de p in mijn carousel op 1e pagina), waar het echt slecht te zien is. Ik kan dit fixen door dit in een hover te veranderen en een zwarte achtergrind toe te voegen voor betere kleur en leesbaarheid
 
 </details>
 
@@ -277,7 +277,7 @@ Wat er vooral uitkwam is dat de contrast in het algemeen goed te zien is voor al
 
 ## Voortgang 3 (week 4)
 
-<details open>
+<details>
   <summary>3e Voortgangsgesprek</summary>
 
   ### Stand van zaken
@@ -286,7 +286,7 @@ Wat er vooral uitkwam is dat de contrast in het algemeen goed te zien is voor al
   Ook een klein dingetje met mijn intersection observer carousel waardoor hij alles in 1x las ipv gewoon te kijken welke slide er observeerd werd wat heel klein is maar wel "noticable" dus ik heb hulp gekregen van Sanne
   
 
-  <img src="readme-images/gesprek3-html-1png" width="375px" alt="html gesprek 2">
+  <img src="readme-images/gesprek3-html-1.png" width="375px" alt="html gesprek 2">
   <img src="readme-images/gesprek3-html-2.png" width="375px" alt="html gesprek 2">
   <img src="readme-images/gesprek3.1.png" width="375px" alt="website overview gesprek 2">
   <img src="readme-images/gesprek3.2.png" width="375px" alt="website overview gesprek 2">
@@ -295,11 +295,10 @@ Wat er vooral uitkwam is dat de contrast in het algemeen goed te zien is voor al
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Elaine           | Shelley                 | Lisanne      | Karenza             |
-  | hoe linken       | toestemming div/class   | gestopt      | Extra flexbox &     |
-  | naar section     | voor carousel           | -            | CSS uitleg en       |
-  | zonder id/class  | productpagina           | ...          | fonts               |
-
+  - Elaine: Hoe link je naar een section zonder een id/class te gebruiken
+  - Shelley: Toestemming div/class voor carousel productpagina
+  - Lisanne: gestopt
+  - Karenza: Extra flexbox & CSS uitleg en fonts
 
   ### Verslag van meeting
   Gaat goed komen, verder niet veel te zeggen maar wel paar puntjes
@@ -308,7 +307,7 @@ Wat er vooral uitkwam is dat de contrast in het algemeen goed te zien is voor al
   - Opletten met contrast tekst hover "recent artists" section op pagina 2
   - Ik mag class gebruiken voor het skippen naar section voor het skippen van 60+ spotify liedjes
 
-    ### Voor mezelf
+  ### Voor mezelf
   - Als ik nog tijd heb alle websites responsive maken (375px min, 560px min)
   - content nog aanvullen in pagina Program
   - Deze markdown aanvullen + bronnen niet vergeten
@@ -329,48 +328,51 @@ Wat er vooral uitkwam is dat de contrast in het algemeen goed te zien is voor al
   ### Je uitkomst - karakteristiek screenshots:
   <img src="readme-images/ade-375.png" width="375px" alt="ADE - mobiel 375px">
   <img src="readme-images/ade-565.png" width="375px" alt="ADE - responsive >560px">
+  375px en >560px
 
   <img src="readme-images/adeprogram-375.png" width="375px" alt="ADE Program - mobiel 375px">
   <img src="readme-images/adeprogram-565.png" width="375px" alt="ADE Program - responsive >560px">
+  375px en >560px
 
 
   ### Dit ging goed/Heb ik geleerd: 
   
-  - Intersection observer
-  Dit vond ik leuk om te doen want het is JavaScript
+  - Intersection observer - Dit vond ik leuk om te doen want het is JavaScript
 
-  - De nth gebeuren
-  Ik heb geleerd hoe je naar onderdelen in je HTML kan linken zonder daarop een class of id te zetten, door de nth selectoren te gebruiken en te weten wat nou je children en parents zijn. Dat kleine spelletje met het css selectoren en eten op plates heeft veel geholpen
+  - De nth gebeuren - Ik heb geleerd hoe je naar onderdelen in je HTML kan linken zonder daarop een class of id te zetten, door de nth selectoren te gebruiken en te weten wat nou je children en parents zijn. Dat kleine spelletje met het css selectoren en eten op plates heeft veel geholpen
 
-  - Grids
-  Ik heb geleerd om een grid te maken dit heb ik vorig jaar niet gedaan omdat ik het niet snapte, maar het is best simpel, je moet alleen een beetje uittekenen waar je je content wil, and that's it
+  - Grids - Ik heb geleerd om een grid te maken dit heb ik vorig jaar niet gedaan omdat ik het niet snapte, maar het is best simpel, je moet alleen een beetje uittekenen waar je je content wil, and that's it
 
-  - Positioneren
-  Ik weet nu een beetje het verschil tussen alle positions
+  - Positioneren - Ik weet nu een beetje het verschil tussen alle positions
 
-  - Aria labels en meer accesibility
-  Ik heb geleerd wat een aria label is en hoe zo een klein labeltje een groot verschil maakt voor mensen die websites browsen met een screenreader
+  - Aria labels en meer accesibility - Ik heb geleerd wat een aria label is en hoe zo een klein labeltje een groot verschil maakt voor mensen die websites browsen met een screenreader
 
-  - Screenreader en andere testen
-  Ik heb geleerd hoe je VoiceOver gebruikt. Dit is handig voor als je je accesibility wilt testen dus dit zal ik vaker gebruiken voor tests. Ook handig om te zien hoe kleurenblinden mijn site zien en voortaan zal ik ontwerpen met de gedachte dat zij ook mijn website browsen
+  - Screenreader en andere testen - Ik heb geleerd hoe je VoiceOver gebruikt. Dit is handig voor als je je accesibility wilt testen dus dit zal ik vaker gebruiken voor tests. Ook handig om te zien hoe kleurenblinden mijn site zien en voortaan zal ik ontwerpen met de gedachte dat zij ook mijn website browsen
 
   - Good practice met veel comments zetten zodat je overzicht hebt in je code
 
   - Custom properties in je css, dit is handig want je hebt overzicht van je kleuren en je kan kleurenpaletten maken
 
   <img src="readme-images/footer-1.png" width="375px" alt="een stukje css van mijn footer">
+
   Hier een stukje code waar je dus ziet dat ik verschillende a's style maar ze wel direct selecteer
+
   <img src="readme-images/footer-2.png" width="375px" alt="De resultaat van mijn footer">
+
   En de eindresultaat ervan.
 
 
   ### Dit was lastig/Is niet gelukt:
-  Alles is gelukt maar ik vond mijn navigatie maken een klein beetje lastig omdat ik 2 soorten hamburgermenu's heb, 1 voor mijn menu en 1 voor het openklappen voor search. Dit heb ik uiteindelijk wel opgelost door een beetje te spelen met de nth's en direct child selectoren dus het kwam wel gewoon goed. Ook heb ik direct de linkjes moeten selecteren om de inhoud in het hamburgermenu (gewone menu) te vormgeven
+  Alles is gelukt maar ik vond mijn navigatie maken een klein beetje lastig omdat ik 2 soorten hamburgermenu's heb, 1 voor mijn menu en 1 voor het openklappen voor search. Dit heb ik uiteindelijk wel opgelost door een beetje te spelen met de nth's en direct child selectoren dus het kwam wel gewoon goed. Ook heb ik direct de linkjes moeten selecteren om de inhoud in het hamburgermenu (gewone menu) te vormgeven.
 
   <img src="readme-images/gedoe-met-menu1.png" width="375px" alt="bummer">
+
   Heel veel specificeren..
+
   <img src="readme-images/gedoe-met-menu2.png" width="375px" alt="bummer">
+
   Maar het is gelukt!
+
 </details>
 
 
